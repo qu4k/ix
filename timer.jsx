@@ -1,6 +1,6 @@
 import { styled } from "uebersicht";
 
-import config from "./lib/timer.config.js"
+import config from "./lib/timer.config.js";
 
 const Table = styled("table")`
   border-spacing: 2em 0em;
@@ -40,12 +40,14 @@ export const render = ({ dates }) => {
   return (
     <div>
       <Table>
-        {countdown.map(({ name, countdown }, idx) => (
-          <tr key={idx}>
-            <Name>{name}</Name>
-            <Countdown>{countdown} days</Countdown>
-          </tr>
-        ))}
+        <tbody>
+          {countdown.map(({ name, countdown }, idx) => (
+            <tr key={idx}>
+              <Name>{name}</Name>
+              <Countdown>{countdown} days</Countdown>
+            </tr>
+          ))}
+        </tbody>
       </Table>
     </div>
   );
