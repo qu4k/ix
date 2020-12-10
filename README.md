@@ -10,8 +10,21 @@ A collection on useful Übersicht widgets
 
 - ⚙️ [Common](#common)
 - ⏲ [timer.jsx](#timer.jsx)
+- 📆 [outdated.jsx](#outdated.jsx)
 
 ## Common
+
+### Installation
+
+```bash
+# change to the Übersicht widget directory
+$ cd ~/Library/Application\ Support/Übersicht/widgets
+
+# ... and sync the disquiet github repo
+$ git clone https://github.com/qu4k/disquiet
+```
+
+### Configuration
 
 Every configurable widget needs to have a `<widget>.config.js` file inside the
 [`lib`](lib) folder. Example configurations are provided inside that same folder
@@ -26,3 +39,8 @@ Display a table of countdowns to important events.
 | Field | Content                                                                |
 | ----- | ---------------------------------------------------------------------- |
 | dates | Array of date objects (`{name: "Name of event": date: new Date(...)}`) |
+
+## outdated.jsx
+
+Periodically check if the `disquiet` repo is up-to-date, otherwise
+show an alert message.
