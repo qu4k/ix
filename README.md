@@ -1,4 +1,4 @@
-# disquiet 
+# ix 
 
 A collection on useful Übersicht widgets
 
@@ -17,11 +17,11 @@ A collection on useful Übersicht widgets
 ### Installation
 
 ```bash
-# change to the Übersicht widget directory
-$ cd ~/Library/Application\ Support/Übersicht/widgets
+# change to the Übersicht widget directory
+$ cd ~/Library/Application\ Support/Übersicht/widgets
 
-# ... and sync the disquiet github repo
-$ git clone https://github.com/qu4k/disquiet
+# ... and sync the ix github repo
+$ git clone https://github.com/qu4k/ix
 ```
 
 ### Configuration
@@ -42,5 +42,5 @@ Display a table of countdowns to important events.
 
 ## outdated.jsx
 
-Periodically check if the `disquiet` repo is up-to-date, otherwise
+Periodically check if the `ix` repo is up-to-date, otherwise
 show an alert message.
